@@ -3,13 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018CEA0035F8DCA2EB06963C /* Pods_LoginMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD58B5FD8AECE3D040167188 /* Pods_LoginMVP.framework */; };
+		04AAD872B25AAEC6421E6724 /* Pods_LoginMVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D634C64EA0894536DFBD1D3C /* Pods_LoginMVPTests.framework */; };
 		7360ECAC25D1D31500A281E9 /* LoginMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7360ECA225D1D31500A281E9 /* LoginMVP.framework */; };
 		7360ECB125D1D31500A281E9 /* LoginMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECB025D1D31500A281E9 /* LoginMVPTests.swift */; };
 		7360ECB325D1D31500A281E9 /* LoginMVP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7360ECA525D1D31500A281E9 /* LoginMVP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7360ED0025D1D57C00A281E9 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7360ECC725D1D57B00A281E9 /* ListViewController.xib */; };
+		7360ED0125D1D57C00A281E9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECC825D1D57B00A281E9 /* ListViewController.swift */; };
+		7360ED0225D1D57C00A281E9 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECC925D1D57B00A281E9 /* ListPresenter.swift */; };
+		7360ED0325D1D57C00A281E9 /* ListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECCA25D1D57B00A281E9 /* ListViewProtocol.swift */; };
+		7360ED0425D1D57C00A281E9 /* GetIndicatorsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECCD25D1D57B00A281E9 /* GetIndicatorsUseCase.swift */; };
+		7360ED0525D1D57C00A281E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECCF25D1D57B00A281E9 /* Constants.swift */; };
+		7360ED0625D1D57C00A281E9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECD025D1D57B00A281E9 /* BaseViewController.swift */; };
+		7360ED0725D1D57C00A281E9 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECD225D1D57B00A281E9 /* ResponseModel.swift */; };
+		7360ED0825D1D57C00A281E9 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECD325D1D57B00A281E9 /* ErrorModel.swift */; };
+		7360ED0925D1D57C00A281E9 /* LocalStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECD525D1D57B00A281E9 /* LocalStoreManager.swift */; };
+		7360ED0A25D1D57C00A281E9 /* StorageServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECD725D1D57C00A281E9 /* StorageServiceLocator.swift */; };
+		7360ED0B25D1D57C00A281E9 /* LocalStorageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECDA25D1D57C00A281E9 /* LocalStorageDataSource.swift */; };
+		7360ED0C25D1D57C00A281E9 /* SecureUserDefaultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECDB25D1D57C00A281E9 /* SecureUserDefaultsDataSource.swift */; };
+		7360ED0D25D1D57C00A281E9 /* LocalStorageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECDD25D1D57C00A281E9 /* LocalStorageRepository.swift */; };
+		7360ED0E25D1D57C00A281E9 /* StorageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECDE25D1D57C00A281E9 /* StorageRepository.swift */; };
+		7360ED0F25D1D57C00A281E9 /* GenericErrorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECE025D1D57C00A281E9 /* GenericErrorConstants.swift */; };
+		7360ED1025D1D57C00A281E9 /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECE125D1D57C00A281E9 /* GenericError.swift */; };
+		7360ED1125D1D57C00A281E9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECE325D1D57C00A281E9 /* Presenter.swift */; };
+		7360ED1225D1D57C00A281E9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECE425D1D57C00A281E9 /* BaseView.swift */; };
+		7360ED1325D1D57C00A281E9 /* ViewFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECE625D1D57C00A281E9 /* ViewFactoryType.swift */; };
+		7360ED1425D1D57C00A281E9 /* IndicatorsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECE725D1D57C00A281E9 /* IndicatorsViewFactory.swift */; };
+		7360ED1525D1D57C00A281E9 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECE825D1D57C00A281E9 /* ViewControllerFactory.swift */; };
+		7360ED1625D1D57C00A281E9 /* LoginViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECE925D1D57C00A281E9 /* LoginViewFactory.swift */; };
+		7360ED1725D1D57C00A281E9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7360ECEC25D1D57C00A281E9 /* LoginViewController.xib */; };
+		7360ED1825D1D57C00A281E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECED25D1D57C00A281E9 /* LoginViewController.swift */; };
+		7360ED1925D1D57C00A281E9 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECEE25D1D57C00A281E9 /* LoginViewProtocol.swift */; };
+		7360ED1A25D1D57C00A281E9 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECEF25D1D57C00A281E9 /* LoginPresenter.swift */; };
+		7360ED1B25D1D57C00A281E9 /* LoginApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECF225D1D57C00A281E9 /* LoginApiRepository.swift */; };
+		7360ED1C25D1D57C00A281E9 /* LoginApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECF425D1D57C00A281E9 /* LoginApiDataSource.swift */; };
+		7360ED1D25D1D57C00A281E9 /* LoginDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECF525D1D57C00A281E9 /* LoginDataSource.swift */; };
+		7360ED1E25D1D57C00A281E9 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECF625D1D57C00A281E9 /* LoginRepository.swift */; };
+		7360ED1F25D1D57C00A281E9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECF925D1D57C00A281E9 /* UserModel.swift */; };
+		7360ED2025D1D57C00A281E9 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECFB25D1D57C00A281E9 /* LoginUseCase.swift */; };
+		7360ED2125D1D57C00A281E9 /* LoginServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECFC25D1D57C00A281E9 /* LoginServiceLocator.swift */; };
+		7360ED2225D1D57C00A281E9 /* DataCrypterUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECFE25D1D57C00A281E9 /* DataCrypterUsage.swift */; };
+		7360ED2325D1D57C00A281E9 /* AES256Crypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECFF25D1D57C00A281E9 /* AES256Crypter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +61,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16A9414913570B6DD69C9E5D /* Pods-LoginMVPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMVPTests.release.xcconfig"; path = "Target Support Files/Pods-LoginMVPTests/Pods-LoginMVPTests.release.xcconfig"; sourceTree = "<group>"; };
 		7360ECA225D1D31500A281E9 /* LoginMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7360ECA525D1D31500A281E9 /* LoginMVP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginMVP.h; sourceTree = "<group>"; };
 		7360ECA625D1D31500A281E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7360ECAB25D1D31500A281E9 /* LoginMVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginMVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7360ECB025D1D31500A281E9 /* LoginMVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMVPTests.swift; sourceTree = "<group>"; };
 		7360ECB225D1D31500A281E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7360ECC725D1D57B00A281E9 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		7360ECC825D1D57B00A281E9 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		7360ECC925D1D57B00A281E9 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		7360ECCA25D1D57B00A281E9 /* ListViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewProtocol.swift; sourceTree = "<group>"; };
+		7360ECCD25D1D57B00A281E9 /* GetIndicatorsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetIndicatorsUseCase.swift; sourceTree = "<group>"; };
+		7360ECCF25D1D57B00A281E9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7360ECD025D1D57B00A281E9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7360ECD225D1D57B00A281E9 /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		7360ECD325D1D57B00A281E9 /* ErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		7360ECD525D1D57B00A281E9 /* LocalStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStoreManager.swift; sourceTree = "<group>"; };
+		7360ECD725D1D57C00A281E9 /* StorageServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageServiceLocator.swift; sourceTree = "<group>"; };
+		7360ECDA25D1D57C00A281E9 /* LocalStorageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageDataSource.swift; sourceTree = "<group>"; };
+		7360ECDB25D1D57C00A281E9 /* SecureUserDefaultsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureUserDefaultsDataSource.swift; sourceTree = "<group>"; };
+		7360ECDD25D1D57C00A281E9 /* LocalStorageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageRepository.swift; sourceTree = "<group>"; };
+		7360ECDE25D1D57C00A281E9 /* StorageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageRepository.swift; sourceTree = "<group>"; };
+		7360ECE025D1D57C00A281E9 /* GenericErrorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorConstants.swift; sourceTree = "<group>"; };
+		7360ECE125D1D57C00A281E9 /* GenericError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
+		7360ECE325D1D57C00A281E9 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		7360ECE425D1D57C00A281E9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		7360ECE625D1D57C00A281E9 /* ViewFactoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFactoryType.swift; sourceTree = "<group>"; };
+		7360ECE725D1D57C00A281E9 /* IndicatorsViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorsViewFactory.swift; sourceTree = "<group>"; };
+		7360ECE825D1D57C00A281E9 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		7360ECE925D1D57C00A281E9 /* LoginViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewFactory.swift; sourceTree = "<group>"; };
+		7360ECEC25D1D57C00A281E9 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		7360ECED25D1D57C00A281E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7360ECEE25D1D57C00A281E9 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
+		7360ECEF25D1D57C00A281E9 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		7360ECF225D1D57C00A281E9 /* LoginApiRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginApiRepository.swift; sourceTree = "<group>"; };
+		7360ECF425D1D57C00A281E9 /* LoginApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginApiDataSource.swift; sourceTree = "<group>"; };
+		7360ECF525D1D57C00A281E9 /* LoginDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDataSource.swift; sourceTree = "<group>"; };
+		7360ECF625D1D57C00A281E9 /* LoginRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		7360ECF925D1D57C00A281E9 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		7360ECFB25D1D57C00A281E9 /* LoginUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		7360ECFC25D1D57C00A281E9 /* LoginServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceLocator.swift; sourceTree = "<group>"; };
+		7360ECFE25D1D57C00A281E9 /* DataCrypterUsage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCrypterUsage.swift; sourceTree = "<group>"; };
+		7360ECFF25D1D57C00A281E9 /* AES256Crypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES256Crypter.swift; sourceTree = "<group>"; };
+		9CA4BB7AE873C69E57BF36BD /* Pods-LoginMVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMVPTests.debug.xcconfig"; path = "Target Support Files/Pods-LoginMVPTests/Pods-LoginMVPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA42B27BB5270FFA09F5BFD4 /* Pods-LoginMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMVP.debug.xcconfig"; path = "Target Support Files/Pods-LoginMVP/Pods-LoginMVP.debug.xcconfig"; sourceTree = "<group>"; };
+		CD58B5FD8AECE3D040167188 /* Pods_LoginMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D634C64EA0894536DFBD1D3C /* Pods_LoginMVPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginMVPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA6499E755CAB55D32CC3FE /* Pods-LoginMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMVP.release.xcconfig"; path = "Target Support Files/Pods-LoginMVP/Pods-LoginMVP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018CEA0035F8DCA2EB06963C /* Pods_LoginMVP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +125,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				7360ECAC25D1D31500A281E9 /* LoginMVP.framework in Frameworks */,
+				04AAD872B25AAEC6421E6724 /* Pods_LoginMVPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		228CC764100DCD597CAE948B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD58B5FD8AECE3D040167188 /* Pods_LoginMVP.framework */,
+				D634C64EA0894536DFBD1D3C /* Pods_LoginMVPTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7360EC9825D1D31400A281E9 = {
 			isa = PBXGroup;
 			children = (
 				7360ECA425D1D31500A281E9 /* LoginMVP */,
 				7360ECAF25D1D31500A281E9 /* LoginMVPTests */,
 				7360ECA325D1D31500A281E9 /* Products */,
+				970CA5B7256F0FDD6383B2B3 /* Pods */,
+				228CC764100DCD597CAE948B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +166,10 @@
 			children = (
 				7360ECA525D1D31500A281E9 /* LoginMVP.h */,
 				7360ECA625D1D31500A281E9 /* Info.plist */,
+				7360ECCE25D1D57B00A281E9 /* Core */,
+				7360ECFD25D1D57C00A281E9 /* Crypto */,
+				7360ECC525D1D57B00A281E9 /* List */,
+				7360ECEA25D1D57C00A281E9 /* Login */,
 			);
 			path = LoginMVP;
 			sourceTree = "<group>";
@@ -84,6 +181,237 @@
 				7360ECB225D1D31500A281E9 /* Info.plist */,
 			);
 			path = LoginMVPTests;
+			sourceTree = "<group>";
+		};
+		7360ECC525D1D57B00A281E9 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECC625D1D57B00A281E9 /* View */,
+				7360ECCB25D1D57B00A281E9 /* Domain */,
+			);
+			name = List;
+			path = "../../MVP-Repository/MVP-Repository/List";
+			sourceTree = "<group>";
+		};
+		7360ECC625D1D57B00A281E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECC725D1D57B00A281E9 /* ListViewController.xib */,
+				7360ECC825D1D57B00A281E9 /* ListViewController.swift */,
+				7360ECC925D1D57B00A281E9 /* ListPresenter.swift */,
+				7360ECCA25D1D57B00A281E9 /* ListViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7360ECCB25D1D57B00A281E9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECCC25D1D57B00A281E9 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7360ECCC25D1D57B00A281E9 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECCD25D1D57B00A281E9 /* GetIndicatorsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7360ECCE25D1D57B00A281E9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECCF25D1D57B00A281E9 /* Constants.swift */,
+				7360ECD025D1D57B00A281E9 /* BaseViewController.swift */,
+				7360ECD125D1D57B00A281E9 /* Model */,
+				7360ECD425D1D57B00A281E9 /* LocalStorage */,
+				7360ECDF25D1D57C00A281E9 /* Error */,
+				7360ECE225D1D57C00A281E9 /* Protocols */,
+				7360ECE525D1D57C00A281E9 /* Factory */,
+			);
+			name = Core;
+			path = "../../MVP-Repository/MVP-Repository/Core";
+			sourceTree = "<group>";
+		};
+		7360ECD125D1D57B00A281E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECD225D1D57B00A281E9 /* ResponseModel.swift */,
+				7360ECD325D1D57B00A281E9 /* ErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7360ECD425D1D57B00A281E9 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECD525D1D57B00A281E9 /* LocalStoreManager.swift */,
+				7360ECD625D1D57B00A281E9 /* DI */,
+				7360ECD825D1D57C00A281E9 /* Data */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		7360ECD625D1D57B00A281E9 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECD725D1D57C00A281E9 /* StorageServiceLocator.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		7360ECD825D1D57C00A281E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECD925D1D57C00A281E9 /* DataSource */,
+				7360ECDC25D1D57C00A281E9 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7360ECD925D1D57C00A281E9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECDA25D1D57C00A281E9 /* LocalStorageDataSource.swift */,
+				7360ECDB25D1D57C00A281E9 /* SecureUserDefaultsDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		7360ECDC25D1D57C00A281E9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECDD25D1D57C00A281E9 /* LocalStorageRepository.swift */,
+				7360ECDE25D1D57C00A281E9 /* StorageRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7360ECDF25D1D57C00A281E9 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECE025D1D57C00A281E9 /* GenericErrorConstants.swift */,
+				7360ECE125D1D57C00A281E9 /* GenericError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		7360ECE225D1D57C00A281E9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECE325D1D57C00A281E9 /* Presenter.swift */,
+				7360ECE425D1D57C00A281E9 /* BaseView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7360ECE525D1D57C00A281E9 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECE625D1D57C00A281E9 /* ViewFactoryType.swift */,
+				7360ECE725D1D57C00A281E9 /* IndicatorsViewFactory.swift */,
+				7360ECE825D1D57C00A281E9 /* ViewControllerFactory.swift */,
+				7360ECE925D1D57C00A281E9 /* LoginViewFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		7360ECEA25D1D57C00A281E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECEB25D1D57C00A281E9 /* View */,
+				7360ECF025D1D57C00A281E9 /* Data */,
+				7360ECF725D1D57C00A281E9 /* Domain */,
+			);
+			name = Login;
+			path = "../../MVP-Repository/MVP-Repository/Login";
+			sourceTree = "<group>";
+		};
+		7360ECEB25D1D57C00A281E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECEC25D1D57C00A281E9 /* LoginViewController.xib */,
+				7360ECED25D1D57C00A281E9 /* LoginViewController.swift */,
+				7360ECEE25D1D57C00A281E9 /* LoginViewProtocol.swift */,
+				7360ECEF25D1D57C00A281E9 /* LoginPresenter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7360ECF025D1D57C00A281E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECF125D1D57C00A281E9 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7360ECF125D1D57C00A281E9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECF225D1D57C00A281E9 /* LoginApiRepository.swift */,
+				7360ECF325D1D57C00A281E9 /* DataSource */,
+				7360ECF625D1D57C00A281E9 /* LoginRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7360ECF325D1D57C00A281E9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECF425D1D57C00A281E9 /* LoginApiDataSource.swift */,
+				7360ECF525D1D57C00A281E9 /* LoginDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		7360ECF725D1D57C00A281E9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECF825D1D57C00A281E9 /* Model */,
+				7360ECFA25D1D57C00A281E9 /* UseCase */,
+				7360ECFC25D1D57C00A281E9 /* LoginServiceLocator.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7360ECF825D1D57C00A281E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECF925D1D57C00A281E9 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7360ECFA25D1D57C00A281E9 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECFB25D1D57C00A281E9 /* LoginUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		7360ECFD25D1D57C00A281E9 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				7360ECFE25D1D57C00A281E9 /* DataCrypterUsage.swift */,
+				7360ECFF25D1D57C00A281E9 /* AES256Crypter.swift */,
+			);
+			name = Crypto;
+			path = "../../MVP-Repository/MVP-Repository/Crypto";
+			sourceTree = "<group>";
+		};
+		970CA5B7256F0FDD6383B2B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA42B27BB5270FFA09F5BFD4 /* Pods-LoginMVP.debug.xcconfig */,
+				FFA6499E755CAB55D32CC3FE /* Pods-LoginMVP.release.xcconfig */,
+				9CA4BB7AE873C69E57BF36BD /* Pods-LoginMVPTests.debug.xcconfig */,
+				16A9414913570B6DD69C9E5D /* Pods-LoginMVPTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +432,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7360ECB625D1D31500A281E9 /* Build configuration list for PBXNativeTarget "LoginMVP" */;
 			buildPhases = (
+				B0E5163D37DC36CA1633D26F /* [CP] Check Pods Manifest.lock */,
 				7360EC9D25D1D31500A281E9 /* Headers */,
 				7360EC9E25D1D31500A281E9 /* Sources */,
 				7360EC9F25D1D31500A281E9 /* Frameworks */,
@@ -122,9 +451,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7360ECB925D1D31500A281E9 /* Build configuration list for PBXNativeTarget "LoginMVPTests" */;
 			buildPhases = (
+				AE34FBE5DBEF9D01FA4D585F /* [CP] Check Pods Manifest.lock */,
 				7360ECA725D1D31500A281E9 /* Sources */,
 				7360ECA825D1D31500A281E9 /* Frameworks */,
 				7360ECA925D1D31500A281E9 /* Resources */,
+				CB87A3755F2D8A71A0423399 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,6 +508,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7360ED1725D1D57C00A281E9 /* LoginViewController.xib in Resources */,
+				7360ED0025D1D57C00A281E9 /* ListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +522,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE34FBE5DBEF9D01FA4D585F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginMVPTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0E5163D37DC36CA1633D26F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginMVP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB87A3755F2D8A71A0423399 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginMVPTests/Pods-LoginMVPTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginMVPTests/Pods-LoginMVPTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginMVPTests/Pods-LoginMVPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7360EC9E25D1D31500A281E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7360ED0A25D1D57C00A281E9 /* StorageServiceLocator.swift in Sources */,
+				7360ED2025D1D57C00A281E9 /* LoginUseCase.swift in Sources */,
+				7360ED0B25D1D57C00A281E9 /* LocalStorageDataSource.swift in Sources */,
+				7360ED0525D1D57C00A281E9 /* Constants.swift in Sources */,
+				7360ED1825D1D57C00A281E9 /* LoginViewController.swift in Sources */,
+				7360ED1D25D1D57C00A281E9 /* LoginDataSource.swift in Sources */,
+				7360ED1A25D1D57C00A281E9 /* LoginPresenter.swift in Sources */,
+				7360ED1125D1D57C00A281E9 /* Presenter.swift in Sources */,
+				7360ED0225D1D57C00A281E9 /* ListPresenter.swift in Sources */,
+				7360ED1625D1D57C00A281E9 /* LoginViewFactory.swift in Sources */,
+				7360ED1425D1D57C00A281E9 /* IndicatorsViewFactory.swift in Sources */,
+				7360ED1E25D1D57C00A281E9 /* LoginRepository.swift in Sources */,
+				7360ED1025D1D57C00A281E9 /* GenericError.swift in Sources */,
+				7360ED0325D1D57C00A281E9 /* ListViewProtocol.swift in Sources */,
+				7360ED0425D1D57C00A281E9 /* GetIndicatorsUseCase.swift in Sources */,
+				7360ED1B25D1D57C00A281E9 /* LoginApiRepository.swift in Sources */,
+				7360ED0D25D1D57C00A281E9 /* LocalStorageRepository.swift in Sources */,
+				7360ED0E25D1D57C00A281E9 /* StorageRepository.swift in Sources */,
+				7360ED2125D1D57C00A281E9 /* LoginServiceLocator.swift in Sources */,
+				7360ED0C25D1D57C00A281E9 /* SecureUserDefaultsDataSource.swift in Sources */,
+				7360ED0925D1D57C00A281E9 /* LocalStoreManager.swift in Sources */,
+				7360ED0725D1D57C00A281E9 /* ResponseModel.swift in Sources */,
+				7360ED1925D1D57C00A281E9 /* LoginViewProtocol.swift in Sources */,
+				7360ED0125D1D57C00A281E9 /* ListViewController.swift in Sources */,
+				7360ED1525D1D57C00A281E9 /* ViewControllerFactory.swift in Sources */,
+				7360ED0825D1D57C00A281E9 /* ErrorModel.swift in Sources */,
+				7360ED1C25D1D57C00A281E9 /* LoginApiDataSource.swift in Sources */,
+				7360ED1225D1D57C00A281E9 /* BaseView.swift in Sources */,
+				7360ED0625D1D57C00A281E9 /* BaseViewController.swift in Sources */,
+				7360ED0F25D1D57C00A281E9 /* GenericErrorConstants.swift in Sources */,
+				7360ED1F25D1D57C00A281E9 /* UserModel.swift in Sources */,
+				7360ED2325D1D57C00A281E9 /* AES256Crypter.swift in Sources */,
+				7360ED2225D1D57C00A281E9 /* DataCrypterUsage.swift in Sources */,
+				7360ED1325D1D57C00A281E9 /* ViewFactoryType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +699,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +757,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -340,6 +771,7 @@
 		};
 		7360ECB725D1D31500A281E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA42B27BB5270FFA09F5BFD4 /* Pods-LoginMVP.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -363,6 +795,7 @@
 		};
 		7360ECB825D1D31500A281E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFA6499E755CAB55D32CC3FE /* Pods-LoginMVP.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -386,7 +819,9 @@
 		};
 		7360ECBA25D1D31500A281E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA4BB7AE873C69E57BF36BD /* Pods-LoginMVPTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginMVPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,7 +838,9 @@
 		};
 		7360ECBB25D1D31500A281E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A9414913570B6DD69C9E5D /* Pods-LoginMVPTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginMVPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
