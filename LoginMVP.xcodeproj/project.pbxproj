@@ -7,9 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29D2573FF29FA575B0164E24 /* libPods-LoginMVP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5A6F18C07E94656FBEAE58 /* libPods-LoginMVP.a */; };
 		7360ECAC25D1D31500A281E9 /* LoginMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7360ECA225D1D31500A281E9 /* LoginMVP.framework */; };
 		7360ECB125D1D31500A281E9 /* LoginMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ECB025D1D31500A281E9 /* LoginMVPTests.swift */; };
 		7360ECB325D1D31500A281E9 /* LoginMVP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7360ECA525D1D31500A281E9 /* LoginMVP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7360EDC325D20C4900A281E9 /* DataCrypterUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED8925D20C4900A281E9 /* DataCrypterUsage.swift */; };
+		7360EDC425D20C4900A281E9 /* AES256Crypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED8A25D20C4900A281E9 /* AES256Crypter.swift */; };
+		7360EDC525D20C4900A281E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED8C25D20C4900A281E9 /* Constants.swift */; };
+		7360EDC625D20C4900A281E9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED8D25D20C4900A281E9 /* BaseViewController.swift */; };
+		7360EDC725D20C4900A281E9 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED8F25D20C4900A281E9 /* ResponseModel.swift */; };
+		7360EDC825D20C4900A281E9 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED9025D20C4900A281E9 /* ErrorModel.swift */; };
+		7360EDC925D20C4900A281E9 /* LocalStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED9225D20C4900A281E9 /* LocalStoreManager.swift */; };
+		7360EDCA25D20C4900A281E9 /* StorageServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED9425D20C4900A281E9 /* StorageServiceLocator.swift */; };
+		7360EDCB25D20C4900A281E9 /* LocalStorageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED9725D20C4900A281E9 /* LocalStorageDataSource.swift */; };
+		7360EDCC25D20C4900A281E9 /* SecureUserDefaultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED9825D20C4900A281E9 /* SecureUserDefaultsDataSource.swift */; };
+		7360EDCD25D20C4900A281E9 /* LocalStorageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED9A25D20C4900A281E9 /* LocalStorageRepository.swift */; };
+		7360EDCE25D20C4900A281E9 /* StorageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED9B25D20C4900A281E9 /* StorageRepository.swift */; };
+		7360EDCF25D20C4900A281E9 /* GenericErrorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED9D25D20C4900A281E9 /* GenericErrorConstants.swift */; };
+		7360EDD025D20C4900A281E9 /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360ED9E25D20C4900A281E9 /* GenericError.swift */; };
+		7360EDD125D20C4900A281E9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDA025D20C4900A281E9 /* Presenter.swift */; };
+		7360EDD225D20C4900A281E9 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDA125D20C4900A281E9 /* BaseView.swift */; };
+		7360EDD325D20C4900A281E9 /* ViewFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDA325D20C4900A281E9 /* ViewFactoryType.swift */; };
+		7360EDD425D20C4900A281E9 /* IndicatorsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDA425D20C4900A281E9 /* IndicatorsViewFactory.swift */; };
+		7360EDD525D20C4900A281E9 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDA525D20C4900A281E9 /* ViewControllerFactory.swift */; };
+		7360EDD625D20C4900A281E9 /* LoginViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDA625D20C4900A281E9 /* LoginViewFactory.swift */; };
+		7360EDD725D20C4900A281E9 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7360EDA925D20C4900A281E9 /* ListViewController.xib */; };
+		7360EDD825D20C4900A281E9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDAA25D20C4900A281E9 /* ListViewController.swift */; };
+		7360EDD925D20C4900A281E9 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDAB25D20C4900A281E9 /* ListPresenter.swift */; };
+		7360EDDA25D20C4900A281E9 /* ListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDAC25D20C4900A281E9 /* ListViewProtocol.swift */; };
+		7360EDDB25D20C4900A281E9 /* GetIndicatorsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDAF25D20C4900A281E9 /* GetIndicatorsUseCase.swift */; };
+		7360EDDC25D20C4900A281E9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7360EDB225D20C4900A281E9 /* LoginViewController.xib */; };
+		7360EDDD25D20C4900A281E9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDB325D20C4900A281E9 /* LoginViewController.swift */; };
+		7360EDDE25D20C4900A281E9 /* LoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDB425D20C4900A281E9 /* LoginViewProtocol.swift */; };
+		7360EDDF25D20C4900A281E9 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDB525D20C4900A281E9 /* LoginPresenter.swift */; };
+		7360EDE025D20C4900A281E9 /* LoginApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDB825D20C4900A281E9 /* LoginApiRepository.swift */; };
+		7360EDE125D20C4900A281E9 /* LoginApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDBA25D20C4900A281E9 /* LoginApiDataSource.swift */; };
+		7360EDE225D20C4900A281E9 /* LoginDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDBB25D20C4900A281E9 /* LoginDataSource.swift */; };
+		7360EDE325D20C4900A281E9 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDBC25D20C4900A281E9 /* LoginRepository.swift */; };
+		7360EDE425D20C4900A281E9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDBF25D20C4900A281E9 /* UserModel.swift */; };
+		7360EDE525D20C4900A281E9 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDC125D20C4900A281E9 /* LoginUseCase.swift */; };
+		7360EDE625D20C4900A281E9 /* LoginServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7360EDC225D20C4900A281E9 /* LoginServiceLocator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +60,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C5A6F18C07E94656FBEAE58 /* libPods-LoginMVP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoginMVP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7360ECA225D1D31500A281E9 /* LoginMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoginMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7360ECA525D1D31500A281E9 /* LoginMVP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginMVP.h; sourceTree = "<group>"; };
 		7360ECA625D1D31500A281E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7360ECAB25D1D31500A281E9 /* LoginMVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginMVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7360ECB025D1D31500A281E9 /* LoginMVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMVPTests.swift; sourceTree = "<group>"; };
 		7360ECB225D1D31500A281E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7360ED8925D20C4900A281E9 /* DataCrypterUsage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCrypterUsage.swift; sourceTree = "<group>"; };
+		7360ED8A25D20C4900A281E9 /* AES256Crypter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES256Crypter.swift; sourceTree = "<group>"; };
+		7360ED8C25D20C4900A281E9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7360ED8D25D20C4900A281E9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7360ED8F25D20C4900A281E9 /* ResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		7360ED9025D20C4900A281E9 /* ErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		7360ED9225D20C4900A281E9 /* LocalStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStoreManager.swift; sourceTree = "<group>"; };
+		7360ED9425D20C4900A281E9 /* StorageServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageServiceLocator.swift; sourceTree = "<group>"; };
+		7360ED9725D20C4900A281E9 /* LocalStorageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageDataSource.swift; sourceTree = "<group>"; };
+		7360ED9825D20C4900A281E9 /* SecureUserDefaultsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureUserDefaultsDataSource.swift; sourceTree = "<group>"; };
+		7360ED9A25D20C4900A281E9 /* LocalStorageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageRepository.swift; sourceTree = "<group>"; };
+		7360ED9B25D20C4900A281E9 /* StorageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageRepository.swift; sourceTree = "<group>"; };
+		7360ED9D25D20C4900A281E9 /* GenericErrorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorConstants.swift; sourceTree = "<group>"; };
+		7360ED9E25D20C4900A281E9 /* GenericError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
+		7360EDA025D20C4900A281E9 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		7360EDA125D20C4900A281E9 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		7360EDA325D20C4900A281E9 /* ViewFactoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewFactoryType.swift; sourceTree = "<group>"; };
+		7360EDA425D20C4900A281E9 /* IndicatorsViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorsViewFactory.swift; sourceTree = "<group>"; };
+		7360EDA525D20C4900A281E9 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		7360EDA625D20C4900A281E9 /* LoginViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewFactory.swift; sourceTree = "<group>"; };
+		7360EDA925D20C4900A281E9 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		7360EDAA25D20C4900A281E9 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		7360EDAB25D20C4900A281E9 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		7360EDAC25D20C4900A281E9 /* ListViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewProtocol.swift; sourceTree = "<group>"; };
+		7360EDAF25D20C4900A281E9 /* GetIndicatorsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetIndicatorsUseCase.swift; sourceTree = "<group>"; };
+		7360EDB225D20C4900A281E9 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		7360EDB325D20C4900A281E9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7360EDB425D20C4900A281E9 /* LoginViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewProtocol.swift; sourceTree = "<group>"; };
+		7360EDB525D20C4900A281E9 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		7360EDB825D20C4900A281E9 /* LoginApiRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginApiRepository.swift; sourceTree = "<group>"; };
+		7360EDBA25D20C4900A281E9 /* LoginApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginApiDataSource.swift; sourceTree = "<group>"; };
+		7360EDBB25D20C4900A281E9 /* LoginDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDataSource.swift; sourceTree = "<group>"; };
+		7360EDBC25D20C4900A281E9 /* LoginRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		7360EDBF25D20C4900A281E9 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		7360EDC125D20C4900A281E9 /* LoginUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		7360EDC225D20C4900A281E9 /* LoginServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceLocator.swift; sourceTree = "<group>"; };
+		AA42B27BB5270FFA09F5BFD4 /* Pods-LoginMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMVP.debug.xcconfig"; path = "Target Support Files/Pods-LoginMVP/Pods-LoginMVP.debug.xcconfig"; sourceTree = "<group>"; };
+		FFA6499E755CAB55D32CC3FE /* Pods-LoginMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMVP.release.xcconfig"; path = "Target Support Files/Pods-LoginMVP/Pods-LoginMVP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D2573FF29FA575B0164E24 /* libPods-LoginMVP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +127,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		228CC764100DCD597CAE948B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C5A6F18C07E94656FBEAE58 /* libPods-LoginMVP.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7360EC9825D1D31400A281E9 = {
 			isa = PBXGroup;
 			children = (
 				7360ECA425D1D31500A281E9 /* LoginMVP */,
 				7360ECAF25D1D31500A281E9 /* LoginMVPTests */,
 				7360ECA325D1D31500A281E9 /* Products */,
+				970CA5B7256F0FDD6383B2B3 /* Pods */,
+				228CC764100DCD597CAE948B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +158,10 @@
 		7360ECA425D1D31500A281E9 /* LoginMVP */ = {
 			isa = PBXGroup;
 			children = (
+				7360ED8B25D20C4900A281E9 /* Core */,
+				7360ED8825D20C4900A281E9 /* Crypto */,
+				7360EDA725D20C4900A281E9 /* List */,
+				7360EDB025D20C4900A281E9 /* Login */,
 				7360ECA525D1D31500A281E9 /* LoginMVP.h */,
 				7360ECA625D1D31500A281E9 /* Info.plist */,
 			);
@@ -84,6 +175,231 @@
 				7360ECB225D1D31500A281E9 /* Info.plist */,
 			);
 			path = LoginMVPTests;
+			sourceTree = "<group>";
+		};
+		7360ED8825D20C4900A281E9 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				7360ED8925D20C4900A281E9 /* DataCrypterUsage.swift */,
+				7360ED8A25D20C4900A281E9 /* AES256Crypter.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		7360ED8B25D20C4900A281E9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7360ED8C25D20C4900A281E9 /* Constants.swift */,
+				7360ED8D25D20C4900A281E9 /* BaseViewController.swift */,
+				7360ED8E25D20C4900A281E9 /* Model */,
+				7360ED9125D20C4900A281E9 /* LocalStorage */,
+				7360ED9C25D20C4900A281E9 /* Error */,
+				7360ED9F25D20C4900A281E9 /* Protocols */,
+				7360EDA225D20C4900A281E9 /* Factory */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7360ED8E25D20C4900A281E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7360ED8F25D20C4900A281E9 /* ResponseModel.swift */,
+				7360ED9025D20C4900A281E9 /* ErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7360ED9125D20C4900A281E9 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				7360ED9225D20C4900A281E9 /* LocalStoreManager.swift */,
+				7360ED9325D20C4900A281E9 /* DI */,
+				7360ED9525D20C4900A281E9 /* Data */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		7360ED9325D20C4900A281E9 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				7360ED9425D20C4900A281E9 /* StorageServiceLocator.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		7360ED9525D20C4900A281E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7360ED9625D20C4900A281E9 /* DataSource */,
+				7360ED9925D20C4900A281E9 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7360ED9625D20C4900A281E9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7360ED9725D20C4900A281E9 /* LocalStorageDataSource.swift */,
+				7360ED9825D20C4900A281E9 /* SecureUserDefaultsDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		7360ED9925D20C4900A281E9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7360ED9A25D20C4900A281E9 /* LocalStorageRepository.swift */,
+				7360ED9B25D20C4900A281E9 /* StorageRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7360ED9C25D20C4900A281E9 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				7360ED9D25D20C4900A281E9 /* GenericErrorConstants.swift */,
+				7360ED9E25D20C4900A281E9 /* GenericError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		7360ED9F25D20C4900A281E9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDA025D20C4900A281E9 /* Presenter.swift */,
+				7360EDA125D20C4900A281E9 /* BaseView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7360EDA225D20C4900A281E9 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDA325D20C4900A281E9 /* ViewFactoryType.swift */,
+				7360EDA425D20C4900A281E9 /* IndicatorsViewFactory.swift */,
+				7360EDA525D20C4900A281E9 /* ViewControllerFactory.swift */,
+				7360EDA625D20C4900A281E9 /* LoginViewFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		7360EDA725D20C4900A281E9 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDA825D20C4900A281E9 /* View */,
+				7360EDAD25D20C4900A281E9 /* Domain */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		7360EDA825D20C4900A281E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDA925D20C4900A281E9 /* ListViewController.xib */,
+				7360EDAA25D20C4900A281E9 /* ListViewController.swift */,
+				7360EDAB25D20C4900A281E9 /* ListPresenter.swift */,
+				7360EDAC25D20C4900A281E9 /* ListViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7360EDAD25D20C4900A281E9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDAE25D20C4900A281E9 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7360EDAE25D20C4900A281E9 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDAF25D20C4900A281E9 /* GetIndicatorsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7360EDB025D20C4900A281E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDB125D20C4900A281E9 /* View */,
+				7360EDB625D20C4900A281E9 /* Data */,
+				7360EDBD25D20C4900A281E9 /* Domain */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7360EDB125D20C4900A281E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDB225D20C4900A281E9 /* LoginViewController.xib */,
+				7360EDB325D20C4900A281E9 /* LoginViewController.swift */,
+				7360EDB425D20C4900A281E9 /* LoginViewProtocol.swift */,
+				7360EDB525D20C4900A281E9 /* LoginPresenter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7360EDB625D20C4900A281E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDB725D20C4900A281E9 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7360EDB725D20C4900A281E9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDB825D20C4900A281E9 /* LoginApiRepository.swift */,
+				7360EDB925D20C4900A281E9 /* DataSource */,
+				7360EDBC25D20C4900A281E9 /* LoginRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7360EDB925D20C4900A281E9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDBA25D20C4900A281E9 /* LoginApiDataSource.swift */,
+				7360EDBB25D20C4900A281E9 /* LoginDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		7360EDBD25D20C4900A281E9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDBE25D20C4900A281E9 /* Model */,
+				7360EDC025D20C4900A281E9 /* UseCase */,
+				7360EDC225D20C4900A281E9 /* LoginServiceLocator.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7360EDBE25D20C4900A281E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDBF25D20C4900A281E9 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7360EDC025D20C4900A281E9 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				7360EDC125D20C4900A281E9 /* LoginUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		970CA5B7256F0FDD6383B2B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA42B27BB5270FFA09F5BFD4 /* Pods-LoginMVP.debug.xcconfig */,
+				FFA6499E755CAB55D32CC3FE /* Pods-LoginMVP.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +420,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7360ECB625D1D31500A281E9 /* Build configuration list for PBXNativeTarget "LoginMVP" */;
 			buildPhases = (
+				B0E5163D37DC36CA1633D26F /* [CP] Check Pods Manifest.lock */,
 				7360EC9D25D1D31500A281E9 /* Headers */,
 				7360EC9E25D1D31500A281E9 /* Sources */,
 				7360EC9F25D1D31500A281E9 /* Frameworks */,
@@ -177,6 +494,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7360EDDC25D20C4900A281E9 /* LoginViewController.xib in Resources */,
+				7360EDD725D20C4900A281E9 /* ListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +508,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B0E5163D37DC36CA1633D26F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginMVP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7360EC9E25D1D31500A281E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7360EDE625D20C4900A281E9 /* LoginServiceLocator.swift in Sources */,
+				7360EDE325D20C4900A281E9 /* LoginRepository.swift in Sources */,
+				7360EDCC25D20C4900A281E9 /* SecureUserDefaultsDataSource.swift in Sources */,
+				7360EDD625D20C4900A281E9 /* LoginViewFactory.swift in Sources */,
+				7360EDCA25D20C4900A281E9 /* StorageServiceLocator.swift in Sources */,
+				7360EDC825D20C4900A281E9 /* ErrorModel.swift in Sources */,
+				7360EDD425D20C4900A281E9 /* IndicatorsViewFactory.swift in Sources */,
+				7360EDCE25D20C4900A281E9 /* StorageRepository.swift in Sources */,
+				7360EDE025D20C4900A281E9 /* LoginApiRepository.swift in Sources */,
+				7360EDCF25D20C4900A281E9 /* GenericErrorConstants.swift in Sources */,
+				7360EDD525D20C4900A281E9 /* ViewControllerFactory.swift in Sources */,
+				7360EDD925D20C4900A281E9 /* ListPresenter.swift in Sources */,
+				7360EDC325D20C4900A281E9 /* DataCrypterUsage.swift in Sources */,
+				7360EDDA25D20C4900A281E9 /* ListViewProtocol.swift in Sources */,
+				7360EDD325D20C4900A281E9 /* ViewFactoryType.swift in Sources */,
+				7360EDE525D20C4900A281E9 /* LoginUseCase.swift in Sources */,
+				7360EDDF25D20C4900A281E9 /* LoginPresenter.swift in Sources */,
+				7360EDD025D20C4900A281E9 /* GenericError.swift in Sources */,
+				7360EDDD25D20C4900A281E9 /* LoginViewController.swift in Sources */,
+				7360EDDE25D20C4900A281E9 /* LoginViewProtocol.swift in Sources */,
+				7360EDCD25D20C4900A281E9 /* LocalStorageRepository.swift in Sources */,
+				7360EDCB25D20C4900A281E9 /* LocalStorageDataSource.swift in Sources */,
+				7360EDD125D20C4900A281E9 /* Presenter.swift in Sources */,
+				7360EDE125D20C4900A281E9 /* LoginApiDataSource.swift in Sources */,
+				7360EDC925D20C4900A281E9 /* LocalStoreManager.swift in Sources */,
+				7360EDE225D20C4900A281E9 /* LoginDataSource.swift in Sources */,
+				7360EDC625D20C4900A281E9 /* BaseViewController.swift in Sources */,
+				7360EDC425D20C4900A281E9 /* AES256Crypter.swift in Sources */,
+				7360EDE425D20C4900A281E9 /* UserModel.swift in Sources */,
+				7360EDC725D20C4900A281E9 /* ResponseModel.swift in Sources */,
+				7360EDC525D20C4900A281E9 /* Constants.swift in Sources */,
+				7360EDD225D20C4900A281E9 /* BaseView.swift in Sources */,
+				7360EDDB25D20C4900A281E9 /* GetIndicatorsUseCase.swift in Sources */,
+				7360EDD825D20C4900A281E9 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +646,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +704,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -340,6 +718,7 @@
 		};
 		7360ECB725D1D31500A281E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA42B27BB5270FFA09F5BFD4 /* Pods-LoginMVP.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -363,6 +742,7 @@
 		};
 		7360ECB825D1D31500A281E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFA6499E755CAB55D32CC3FE /* Pods-LoginMVP.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -387,6 +767,7 @@
 		7360ECBA25D1D31500A281E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginMVPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +785,7 @@
 		7360ECBB25D1D31500A281E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginMVPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

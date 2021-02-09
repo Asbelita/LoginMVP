@@ -1,0 +1,6 @@
+module Pods_LoginMVP {
+  umbrella header "Pods-LoginMVP-umbrella.h"
+
+  export *
+  module * { export * }
+}
